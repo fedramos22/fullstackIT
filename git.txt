@@ -1,7 +1,7 @@
 
 Pasos a seguir
 
-1. git init = inicia un repositorio local (copia todo lo que tengo en el directorio donde lo inicio)
+1. git init = inicia un repositorio local, una sola vez (copia todo lo que tengo en el directorio donde lo inicio)
 
 2. U = significa sin seguimiento, no estan guardados en el respositorio local
 
@@ -15,3 +15,10 @@ Pasos a seguir
 
 5. M => el archivo fue modificado, pero no guardado 
 
+6. git commit => embalar el paquete de archivos para enviarlo 
+
+    -m => comentar o describir la tarea realizada 
+
+    . ejemplo: git commit -m "Saludos"
+
+7. Si tocamos alog, volvemos a iniciar, menors el número 1
