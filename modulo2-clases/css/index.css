@@ -1,0 +1,14 @@
+/* para los estilos en el archivo:
+    selector {
+        propiedad: valor de la propiedad
+    }
+*/
+
+h1 {
+    background-color: #ff4fff;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}

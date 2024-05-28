@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETIQUETAS DE HTML</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>
+                    <a href="../02-elementos/etiquetas.html">etiquetas</a>
+                </li>
+                <li>
+                    <a href="../02-elementos/formulario.html">formulario</a>
+                </li>
+                <li>
+                    <a href="../02-elementos/index.html">index</a>
+                </li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    
+    <!-- 1. cabecera de la página web -->
+    <header>
+        <!-- semantica, rol importante, por eso va en el header -->
+        <nav>
+            <!-- etiquetas de listas desordenadas -->
+            <ul>
+                <!-- etiquetas de item list -->
+                <li>
+                    <!-- etiqueta ancla y su atributo href: solicito un recurso (interno o externo) -->
+                    <!-- es una url relativa -->
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <!-- etiqueta target modifica si va a una nueva pestaña o no, y title crea un mensaje al hacer click -->
+                    <!-- es una url absoluta -->
+                    <a href="https://educacionit.com" target="_blank" title="Ir a Educación IT">Educación IT</a>
+                </li> 
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- 2. El cuerpo de la página web, contenido principal -->
+    <main>
+        <!-- etiquetas semanticas, section agrupa y organiza la estructura de la página -->
+        <section id="noticiasLocales">
+            <h1>
+                Noticias Locales
+            </h1>
+            <article>
+                <h2>
+                    CABA
+                </h2>
+                <!-- para colocar una imagen -->
+                <figure>
+                    <!-- alt sirve para accesibilidad y si se rompe la imagen su descripcion -->
+                    <img src="https://buenosaires.gob.ar/sites/default/files/media/image/2014/07/09/c455ba5c69e038a769fbc1184f4414417b4efa9b.jpg" alt="Logo de CABA" title="Logo de la Ciudad de Buenos Aires">
+                    <!-- comentario bajo las imagenes -->
+                    <figcaption>El logo de la Ciudad de Buenos Aires</figcaption>
+                </figure>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur <a href="#form">Formulario</a> adipisicing elit. Odio enim, cum inventore, dolore eos, id ipsum totam minus officiis temporibus quidem voluptate perferendis adipisci aperiam sapiente repellat aliquid eligendi iure.
+                </p>
+
+                <h2>
+                    Mendoza
+                </h2>
+                <figure>
+                    <img src="../assets/images/ff.jpg">
+                    <figcaption>Paisaje de Mendoza</figcaption>
+                </figure>
+                <p>
+                    Lorem ipsum dolor, sit amet <a href="./formulario.html" target="_blank" title="Ir a Formulario">Formulario</a> consectetur adipisicing elit. Libero, totam hic ex eius quaerat adipisci error fugiat voluptatem labore amet soluta, perspiciatis ipsum enim excepturi maxime sapiente autem harum aperiam?
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet <a href="../01-introhtml/#formContact" target="_blank" title="Ir a Formulario">Formulario</a> consectetur adipisicing elit. Libero, totam hic ex eius quaerat adipisci error fugiat voluptatem labore amet soluta, perspiciatis ipsum enim excepturi maxime sapiente autem harum aperiam?
+                </p>
+            </article>
+        </section>
+        <!-- bloques especificos con alguna área, dividir por secciones la info -->
+        <section>
+            <h1>
+                Deportes
+            </h1>
+            <article>
+                <h2>
+                    Primera Nacional
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, praesentium? Possimus odio omnis voluptatibus fuga praesentium sequi velit quo quaerat molestiae, amet cupiditate eveniet quisquam nisi expedita nihil et eius.
+                </p>
+                <h2>
+                    Europa League
+                </h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos fugit aliquid earum, aperiam vero molestiae perspiciatis corporis quaerat itaque exercitationem doloribus repudiandae non esse corrupti, cumque doloremque. Quis, aliquid illum!
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h1>
+                Internacionales
+            </h1>
+        </section>
+
+        <section>
+            <article>
+            <h2>
+                Primera Nacional
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, praesentium? Possimus odio omnis voluptatibus fuga praesentium sequi velit quo quaerat molestiae, amet cupiditate eveniet quisquam nisi expedita nihil et eius.
+            </p>
+            <h2>
+                Europa League
+            </h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos fugit aliquid earum, aperiam vero molestiae perspiciatis corporis quaerat itaque exercitationem doloribus repudiandae non esse corrupti, cumque doloremque. Quis, aliquid illum!
+            </p>
+            </article>
+        </section>
+
+        <section>
+        <h1>
+            Internacionales
+        </h1>
+        </section>
+
+        <div>
+            <h3 id="form">Formulario de contacto</h3>
+        </div>
+        
+        <!-- es un elemento 'comodín' -->
+        <div>
+            <h1>
+                <a href="../01-introhtml/index.html">
+                    Hola Mundo
+                </a>
+            </h1>
+        </div>
+
+        <div>
+            <p>Lorem, <strong>ipsum dolor</strong> sit amet consectetur adipisicing elit. Quo deleniti ab et repudiandae sunt at <br>incidunt impedit neque dignissimos. Esse delectus dolorem temporibus itaque enim ipsum assumenda incidunt autem accusamus?</p>
+        </div>
+    </main>
+
+    <!-- 3. Pie de página -->
+    <footer>
+        <h2>Nuestras redes sociales</h2>
+        <ul type="square"><!-- ol>li*4 -->
+            <li>Facebook</li>
+            <li>Facebook</li>
+            <li>Facebook</li>
+            <li>Facebook</li>
+        </ul>
+        <ol type="A">
+            <li>Facebook</li>
+            <li>Facebook</li>
+            <li>Facebook</li>
+            <li>Facebook</li>
+        </ol>
+        <address> <!-- pone las letras hijas en cursiva (italica) -->
+            <p>
+                San Martin 3503 c/ Belgrano <br> <!-- salto de linea -->
+                Mendoza - Argentina <br>
+                Ciudad - EP5500 <br>
+            </p>
+        </address>
+
+        <h2>
+            Nuestra casa Matriz
+        </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9264.544767358959!2d-58.487279843375276!3d-34.81823711208685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1716332442095!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+</body>
+</html>
