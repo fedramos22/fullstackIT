@@ -22,3 +22,7 @@ Pasos a seguir
     . ejemplo: git commit -m "Saludos"
 
 7. Si tocamos alog, volvemos a iniciar, menors el número 1
+
+8. git status => consulta estado de GIT
+
+9. GIT no guarda directorios vacios por default
