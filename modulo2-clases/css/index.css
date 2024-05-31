@@ -13,6 +13,23 @@ p {
     font-size: 1em;
 }
 
+/* 1. Selector con id, usarlo preferentemente una sola vez (identificador único) */
+#parrafo1 {
+    color: blue;
+    margin: 30px 20px 60px 50px;
+    padding: 20px 30px 40px 30px;
+}
+
+/* 2. Selector de 'clase' podemos utilizarlo mas de una vez */
+.parrafo2 {
+    background-color: forestgreen;
+}
+
+.textGrande {
+    font-size: 60px;
+}
+
+
 div {
     color: blue;
 }
