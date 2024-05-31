@@ -26,3 +26,7 @@ Pasos a seguir
 8. git status => consulta estado de GIT
 
 9. GIT no guarda directorios vacios por default
+
+10. git remote -v => me muestran donde estan guardados los códigos
+
+11. git log => me muestra los commits hechos y quien los hizo
