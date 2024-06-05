@@ -1,0 +1,22 @@
+
+/* regla para el uso de una tipografia local */
+@font-face {
+    font-family: "asquire";
+    src: url(../../modulo2-clases/assets/Asquire.otf);
+}
+    
+ol li {
+    color: palevioletred;
+    background-color: aqua;
+}
+
+p {
+    font-size: 20px;
+    /* tipografia del sistema operativo */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.diffFont {
+    font-family: "asquire";
+    font-size: 36px;
+}
