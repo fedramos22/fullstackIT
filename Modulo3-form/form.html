@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../clase03-imagen/assets/images/airplane.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>
+            Formulario de contacto
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio praesentium enim fugiat dolores error officiis doloribus magnam, asperiores veritatis debitis ad eum? Ipsa neque laudantium deleniti molestias, sint eius ratione?
+        </p><br>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio praesentium enim fugiat dolores error officiis doloribus magnam, asperiores veritatis debitis ad eum? Ipsa neque laudantium deleniti molestias, sint eius ratione?
+        </p>
+    </div>
+
+    <div class="titulo">
+        <!-- importante el action, envia la informacion a donde lo linkee -->
+        <form>
+            <label for="nombre"><strong>Nombre:</strong> <br>
+                <input type="text" name="" id="nombre" placeholder="Nombre Completo" required>
+            </label> 
+            <br>
+
+            <label for="email"><strong>Email:</strong> <br>
+                <input type="email" placeholder="JohnDoe@example.com" required>
+            </label>
+            <br>
+
+            <label for="password"><strong>Contraseña:</strong> 
+                <input type="password" placeholder="Contraseña">
+            </label>
+            <br>
+
+            <label for="pais"><strong>País:</strong> 
+                <select name="Pais nacimiento" id="pais">
+                    <optgroup>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                        <option value="">Argentina</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br>
+
+            <label><strong>Provincia:</strong>
+                <select name="" id="">
+                    <optgroup>
+                        <option value="">CABA</option>
+                        <option value="">Mendoza</option>
+                    </optgroup>
+                </select>
+            </label>
+
+            <button type="submit">Enviar Datos</button>
+            <button type="reset">Borrar Datos</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
