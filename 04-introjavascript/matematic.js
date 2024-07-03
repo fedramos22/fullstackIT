@@ -37,4 +37,17 @@ console.log("El resultado del modulo es:", resultado);
 
 console.log("---------------------------------------");
 
+// ejemplo de lenguaje estatico
+// java - C++ - C# - TypeScript => POO
+// int edad = 20;
 
+edad = "36";
+
+// typescript
+edad: number = 15;
+
+edad = 38;
+
+let uno = 50;
+uno = 'pepe';
+uno = true;
