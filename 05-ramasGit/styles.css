@@ -2,19 +2,48 @@ body {
     background-color: burlywood;
 }
 
+
 img{
     width: 450px;
     height: 300px;
 }
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline;
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 12px;
 }
 
-main{
+.edIT{
+    width: 350px;
+    height: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    margin: 15px;
+    font-size: 24px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+li a{
+    text-decoration: none;
+    color: blue;
+}
+
+.productos{
     display: flex;
     /* flex-direction: row; elementos en fila por default */
     /* flex-direction: column; elementos ordenados en columna */
@@ -27,6 +56,24 @@ main{
     justify-content: space-evenly;
 }
 
+
 div{
     margin: 10px;
+}
+
+.seccionTablas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablas{
+    width: 80%;
+}
+
+td{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
 }
