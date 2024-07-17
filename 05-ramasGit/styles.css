@@ -1,3 +1,32 @@
 body {
     background-color: burlywood;
 }
+
+img{
+    width: 450px;
+    height: 300px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+main{
+    display: flex;
+    /* flex-direction: row; elementos en fila por default */
+    /* flex-direction: column; elementos ordenados en columna */
+    /* flex-direction: row-reverse; elementos en fila al revés */
+    /* flex-direction: column-reverse; elementos en columna pero al revés */
+    flex-direction: row;
+    /* flex-wrap: nowrap; no hace un salto de linea cuando llega el final, por default */
+    flex-wrap: wrap; /* habilita el salto de linea cuando termina la ventana (responsivo) */
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+
+div{
+    margin: 10px;
+}
