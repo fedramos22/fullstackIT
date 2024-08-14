@@ -19,18 +19,40 @@
         </button>
     </div>
     <div class="text-center mt-5">
-        <button onclick="sumar()" type="button" class="btn btn-success">
+        <button onkeypress="sumar()" onclick="sumar()" type="button" class="btn btn-success">
             Botón para iniciar una suma entre dos números
         </button>
     </div>
     <div class="text-center mt-5">
-        <button onclick="restar()" type="button" class="btn btn-success">
+        <button onclick="restar()" type="button" class="btn btn-danger">
             Botón para hacer una resta entre dos números
         </button>
     </div>
+    <div class="text-center mt-5">
+        <button onclick="multiplicar()" type="button" class="btn btn-primary">
+            Botón para hacer una multiplicación entre dos números
+        </button>
+    </div>
+    <div class="text-center mt-5">
+        <button onclick="dividir()" type="button" class="btn btn-secondary">
+            Botón para hacer una división entre dos números
+        </button>
+    </div>
 
+    <h1 class="mt-5 text-center" onmouseover="alert('Mouse sobre el titulo')">
+        Otras funciones de JS nativo
+    </h1>
+    <div class="text-center mt-5 d-flex justify-content-around">
+        <label for="contador">Contador: </label>
+        <input onkeypress="contador()">
+    </div>
 
+    <h2 onmouseover="function hola(){console.log('Hola Gente!')};" ondblclick="doble()" class="text-center mt-5 d-flex justify-content-around">
+        Doble click
+    </h2>
 
+    <label for="email">Email: </label>
+    <input type="email" id="email" class="form-control" pattern="[a-zA-Z], {3}">
 
     <script src="./evento.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
