@@ -90,7 +90,7 @@ const loginUser = () => {
 }
 
 //modoOscuro()
-const modoOscuro = () =>{
+const modoOscuro = () => {
 
     //tomamos el body
     let fondo = document.getElementById('fondo');
@@ -101,7 +101,7 @@ const modoOscuro = () =>{
     //tomamos el boton
     let boton = document.getElementById('boton');
 
-    if (boton.innerHTML === 'Modo oscuro'){
+    if (boton.innerHTML === 'Modo oscuro') {
         console.log('Activamos el modo oscuro');
         fondo.style.backgroundColor = 'black';
         titulo.style.color = 'white';
@@ -112,4 +112,21 @@ const modoOscuro = () =>{
         titulo.style.color = 'black';
         boton.innerHTML = 'Modo oscuro';
     }
+    let oculto = document.getElementById('oculto').value;
+    alert(oculto);
 }
+
+const mostrar = () => {
+    let password = document.getElementById('password');
+
+
+    if (password.type === "password" ) {
+        password.type = 'text';
+    } else {
+        password.type = 'password';
+    }
+}
+
+let dia = new Date();
+console.log(dia)
+console.log(dia.getFullYear());

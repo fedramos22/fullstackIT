@@ -29,6 +29,9 @@
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" placeholder="mínimo de caracteres" required>
+
+            <i class="bi bi-eye"></i>
+            <input type="checkbox" onclick="mostrar()">Mostrar datos
         </div>
         <div class="mb-3">
             <h2>Selecciona tus Hobbies</h2>
@@ -50,6 +53,38 @@
                 <input type="radio"  value="20">
             </radiogroup>
         </div>
+
+        <div class="mb-3  text-center">
+            <label for="oculto">Input oculto</label>
+            <!-- Este input no esta  a la vista-->
+            <input type="hidden" id="oculto">
+        </div>
+
+        <div class="mb-3  text-center">
+            <label for="archivo">Selecciona un archivo</label>
+            <input type="file" id="archivo">
+        </div>
+
+        <div class="mb-3  text-center">
+            <label for="rango">Rango</label>
+            <input type="range" min="0" max="100" id="rango">
+        </div>
+
+        <div class="mb-3  text-center">
+            <label for="calendario"></label>
+            <input type="date" id="calendario">
+        </div>
+
+        <div class="mb-3  text-center">
+            <label for="dia"></label>
+            <input type="datetime-local" id="dia">
+        </div>
+
+        <div class="mb-3  text-center">
+            <label for="textarea"></label>
+            <textarea cols="20" rows="10" id="textarea"></textarea>
+        </div>
+
         <div class="mb-3  text-center">
             <button type="submit" class="btn btn-warning w-25 ">
                 Login
