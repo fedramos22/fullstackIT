@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* Traemos nuestro reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* 1. Creamos variables con sass */
+/* 3. mixin: bloques de código reutilizables */
+/* 2. Anidamos estilos dentro de scss */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; }
+  .nav ul {
+    list-style: none; }
+    .nav ul li {
+      display: block; }
+      .nav ul li a {
+        color: wheat; }
+        .nav ul li a:hover {
+          color: #113a58; }
+
+/* Importamos el body */
+body {
+  background-color: #333; }
+
+h1 {
+  color: #fff;
+  font-family: sans-serif; }
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
