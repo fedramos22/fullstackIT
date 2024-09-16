@@ -1,0 +1,8 @@
+
+BEM : es un patron de diseño para la nomenclatura  de las clases de CSS y la utiliza mucho Bootstrap
+
+1. Bloque: Se nombra un bloque principal. EJ: navbar
+
+2. Elemento: Es una etiqueta hija con unas modificaciones en el estilo. Ej: navbar__logo, navbar__divs
+
+3. Modificador: Es el último estilo que aplicamos al bloque padre. Ej: navbar__menu__links
