@@ -1,13 +1,11 @@
 @mixin tablet {
     @media screen and (max-width: 768px) {
-        @content;
-        background-color: red;
+      @content;
     }
-}
-
-@mixin mobile {
+  }
+  
+  @mixin mobile {
     @media screen and (max-width: 280px) {
-        @content;
-        background-color: blue;
+      @content;
     }
-}
+  }
