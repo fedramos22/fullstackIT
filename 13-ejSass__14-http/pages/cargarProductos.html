@@ -38,6 +38,81 @@
         </div>
     </div>
 
+    <hr class="mt-5 mb-5">
+    <!-- creamos el formulario para cargar -->
+    
+    <div>
+        <h1 class="text-center mt-5">
+            Formulario de carga de productos
+        </h1>
+    </div>
+
+    <div class="mt-5">
+        <form class="w-75" id="formulario">
+            <div class="mb-3">
+                <label for="nombreProducto" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreProducto" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="precioProducto" class="form-label">Precio:</label>
+                <input type="number" class="form-control" id="precioProducto">
+            </div>
+            <div class="mb-3">
+                <label for="stockProducto" class="form-label">Stock:</label>
+                <input type="number" class="form-control" id="stockProducto">
+            </div>
+            <div class="mb-3">
+                <label for="descripcionProducto" class="form-label">Descripción:</label>
+                <input type="text" class="form-control" id="descripcionProducto">
+            </div>
+            <div class="mb-3">
+                <label for="imagenProducto" class="form-label">Stock:</label>
+                <input type="text" class="form-control" id="imagenProducto">
+            </div>
+            <div class="text-center">
+                <button type="reset" class="btn btn-danger w-25">
+                    Borrar
+                </button>
+                <button class="btn btn-success w-25" id="botonCargar">
+                    Cargar
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <hr class="mt-5 mb-5">
+
+    <div>
+        <h1 class="text-center mt-5">
+            Listado de productos
+        </h1>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary w-75 m-5" id="botonListar">
+            Listar Productos
+        </button>
+    </div> 
+
+    <div>
+        <table class="table table-striped" id="miTabla">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="bodyTabla">
+                
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
 
     <script src="../js/cargarProductos.js"></script>
 </body>
