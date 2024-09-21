@@ -10,8 +10,7 @@
     <title>Cargar Productos</title>
 </head>
 
-<body class="container">
-
+<body>
     <nav class="navbar">
         <a href="../index.html" class="navbar__logo">SASS</a>
             <div class="navbar__bars">
@@ -48,7 +47,7 @@
     </div>
 
     <div class="mt-5">
-        <form class="w-75" id="formulario">
+        <form class="text-center w-75 container" id="formulario">
             <div class="mb-3">
                 <label for="nombreProducto" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombreProducto" aria-describedby="emailHelp">
@@ -66,7 +65,7 @@
                 <input type="text" class="form-control" id="descripcionProducto">
             </div>
             <div class="mb-3">
-                <label for="imagenProducto" class="form-label">Stock:</label>
+                <label for="imagenProducto" class="form-label">Imagen:</label>
                 <input type="text" class="form-control" id="imagenProducto">
             </div>
             <div class="text-center">
@@ -89,16 +88,15 @@
     </div>
 
     <div class="text-center">
-        <button class="btn btn-primary w-75 m-5" id="botonListar">
+        <button class="btn btn-primary w-25 m-5" id="botonListar">
             Listar Productos
         </button>
     </div> 
 
     <div>
-        <table class="table table-striped" id="miTabla">
+        <table class="table table-striped container" id="miTabla">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Precio</th>
                     <th scope="col">Stock</th>
@@ -106,7 +104,6 @@
                 </tr>
             </thead>
             <tbody id="bodyTabla">
-                
             </tbody>
             <tfoot>
 

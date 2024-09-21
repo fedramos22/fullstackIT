@@ -35,7 +35,7 @@ botonCargar.addEventListener('click', (e) => {
     console.log(misProductos);
     
     // 4. Limpiamos los campos del formulario 
-    limpiarCampos();
+    /* limpiarCampos(); */
 
     // 4. Limpiamos los campos del formulario de otra forma
     //formulario.reset(); mas nuevo
@@ -43,6 +43,8 @@ botonCargar.addEventListener('click', (e) => {
     // 5. Guardamos los productos en el local storage
     //                                 pasa a tipo de dato a texto (esta en objeto)
     localStorage.setItem("productos", JSON.stringify(misProductos));
+
+    cargarTabla();
 
 });
 
@@ -67,13 +69,41 @@ botonListar.addEventListener('click', (e) => {
 const cargarTabla = () => {
     let bodyTabla = document.getElementById("bodyTabla");
 
-    bodyTabla.innerHTML = "";
+    //bodyTabla.innerHTML = "";
 
+    // creamos la filas para cada producto
     let fila = document.createElement("tr");
-    let columna = document.createElement("td");
+    
+    // creamos las columnas para cada producto
+    let columnaNombre = document.createElement("td");
+    let columnaPrecio = document.createElement("td");
+    let columnaStock = document.createElement("td");
+    let columnaImagen = document.createElement("td");
+
+    // agregamos los valores a las columnas
+    for (let i = 0; i < misProductos.length; i++) {
+        columnaNombre.innerHTML = misProductos[i].nombre;
+        columnaPrecio.innerHTML = misProductos[i].precio;
+        columnaStock.innerHTML = misProductos[i].stock;
+        columnaImagen.innerHTML = `<img src= "${misProductos[i].imagen}" width="100px"/>`;      
+    };
+
+    // Voy agregando los elementos a la fila
+    fila.appendChild(columnaNombre);
+    fila.appendChild(columnaPrecio);
+    fila.appendChild(columnaStock);
+    fila.appendChild(columnaImagen);
+
+    // Subo la fila al body de la tabla
+    bodyTabla.appendChild(fila);
+
 };
 
-
+// Ejemplos del DOM con las etiquetas de html
+/* let titulosTabla = document.getElementsByTagName("th");
+titulosTabla.style.color = "red";
+console.log(titulosTabla);
+ */
 
 //imprimimos en la pantalla al cliente que se logueo
 //tomamos el dato desde el localstorage: memoria local del navegador

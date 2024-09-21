@@ -31,7 +31,7 @@
     </h1>
 
     <div class="mt-5 container">
-        <form class="w-75">
+        <form class="w-75" id="miForm">
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
@@ -44,8 +44,13 @@
                 <button type="reset" class="btn btn-danger w-25">
                     Borrar
                 </button>
-                <button onclick="loginUser()" class="btn btn-success w-25" id="botonEnviar">
+                <button class="btn btn-success w-25" id="botonEnviar">
                     Login
+                </button>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-warning w-25 mt-4">
+                    Otro Login
                 </button>
             </div>
         </form>
