@@ -5,13 +5,16 @@ let span = document.getElementById("nombrePersonaje");
 
 let botonPresentar = document.getElementById("botonPresentar");
 
+let div = document.get
+
 botonPresentar.addEventListener('click', (e) => {
     e.preventDefault();
     const user = prompt("¿Quién se presenta hoy? (Mario, Luigi, Bowser, Peach, Yoshi, Toad, Toadette, Daisy)").toLowerCase();
     console.log(user);   
-    mostrarPersonajes(user);   
+    mostrarPersonajes(user);
     reset(user);
 });
+
 
 const mostrarPersonajes = (user) => {
     let div = document.getElementById(`${user}`);
@@ -20,81 +23,87 @@ const mostrarPersonajes = (user) => {
             span.innerHTML = `${personajes[0]}`;
             div.setAttribute("title", "Presentado");
             // console.log(personajes[0]);
-        break;
+            break;
         case 'luigi':
             span.innerHTML = `${personajes[1]}`;
             div.setAttribute("title", "Presentado");
-        break;
+            break;
         case 'bowser':
             span.innerHTML = `${personajes[2]}`;
             div.setAttribute("title", "Presentado");
-        break;
+            break;
         case 'peach':
             span.innerHTML = `${personajes[3]}`;
             div.setAttribute("title", "Presentado");
-        break;
+            break;
         case 'yoshi':
             span.innerHTML = `${personajes[4]}`;
             div.setAttribute("title", "Presentado");
-        break;
+            break;
         case 'toad':
             span.innerHTML = `${personajes[5]}`;
             div.setAttribute("title", "Presentado");
-        break;
+            break;
         case 'toadette':
             span.innerHTML = `${personajes[6]}`;
             div.setAttribute("title", "Presentado");
-        break;
+            break;
         case 'daisy':
             span.innerHTML = `${personajes[7]}`;
             div.setAttribute("title", "Presentado");
-        break;
+            break;
         default:
             span.innerHTML= "Desconocido";
-        break;
+            break;
+        //botonPresentar.style.display = "none";
     };
-    // botonPresentar.style.display = "none";
 };
 
-const reset = (user) =>{
+const reset = (user) => {
     let div = document.getElementById(`${user}`);
     switch (user) {
         case 'mario':
             span.innerHTML = `${personajes[0]}`;
             div.setAttribute("title", "Presentado");
-            // console.log(personajes[0]);
-            break;
+        break;
         case 'luigi':
             span.innerHTML = `${personajes[1]}`;
-            div.setAttribute("title", "Presentado");
+            div.setAttribute("title", "");
             break;
         case 'bowser':
             span.innerHTML = `${personajes[2]}`;
-            div.setAttribute("title", "Presentado");
+            div.setAttribute("title", "");
             break;
         case 'peach':
             span.innerHTML = `${personajes[3]}`;
-            div.setAttribute("title", "Presentado");
+            div.setAttribute("title", "");
             break;
         case 'yoshi':
             span.innerHTML = `${personajes[4]}`;
-            div.setAttribute("title", "Presentado");
+            div.setAttribute("title", "");
             break;
         case 'toad':
             span.innerHTML = `${personajes[5]}`;
-            div.setAttribute("title", "Presentado");
+            div.setAttribute("title", "");
             break;
         case 'toadette':
             span.innerHTML = `${personajes[6]}`;
-            div.setAttribute("title", "Presentado");
+            div.setAttribute("title", "");
             break;
         case 'daisy':
             span.innerHTML = `${personajes[7]}`;
-            div.setAttribute("title", "Presentado");
+            div.setAttribute("title", "");
             break;
-        default:
-            span.innerHTML= "Desconocido";
-            div.setAttribute("title", "Presentado")
-        break;
-    };;
+        default :
+            div.getElementsByClassName("cerrar");
+            div.setAttribute("title", "");
+            break;
+    }; 
 }; 
+
+if (user == "mario") {
+    span.innerHTML = `${personajes[0]}`;
+    div.setAttribute("title", "Presentado");
+} else {
+    div.getElementsByTagName();
+}

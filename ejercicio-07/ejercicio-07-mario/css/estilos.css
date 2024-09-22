@@ -73,6 +73,7 @@ h1 > strong {
     background-color: #000;
     background-position: -180px -40px;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #cajas > div[title="Presentado"] {
