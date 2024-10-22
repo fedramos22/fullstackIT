@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #2F2B26;
+}
+
+.cabecera {
+    width: 100%;
+    border: 1px solid #2F2B26;
+}
+
+.navegador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 24px;
+    width: 100%;
+}
+
+.navegador .nombreComercio {
+    margin-left: 16px;
+    justify-content: left;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.navegador .navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navegador .navLinks li {
+    display: flex;
+    margin-right: 24px;
+    font-size: 16px;
+}
+
+.navegador .navLinks li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+.navegador .navLinks li a i {
+    margin-left: 15px;
+    font-size: 22px;
+}
+
+.navLinks li input {
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #2F2B26;
+    padding: 4px;
+}
+
+.navLinks li i {
+    cursor: pointer;
+}
+
+main {
+    background-image: url("../assets/images/fondoContacto.png");
+    background-size: cover;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+section form .infoUsuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 60vw;
+    border: 1px #2F2B26 solid;
+}
+
+.infoUsuario .inputBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin: 0 16px;
+    border-bottom: 1px solid #2F2B26;
+}
+
+.infoUsuario .msj {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 20px;
+    border-bottom: 1px solid #2F2B26;
+}
+
+.inputBox .label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.label textarea {
+    margin: 20px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+
+.label textarea::placeholder {
+    padding: 6px;
+}
+
+.botonBox .label input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100px;
+    padding: 14px;
+    color: #ffffff;
+    background-color: #2F2B26;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.botonBox .label input:hover {
+    background-color: #63605B;
+}
+
+.label input {
+    margin-top: 16px;
+    border: none;
+    border-bottom: 1px solid #2F2B26;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #2F2B26;
+}
+
+.pie .pieContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.pieContacto h2 {
+    font-size: 46px;
+    font-weight: 300;
+    margin: 50px 30px 16px 50px;
+}
+
+.pieContacto p {
+    margin: 0 30px 0 50px;
+    font-size: 16px;
+    font-weight: 300;
+    padding-right: 20px;
+}
+
+.pieContacto span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 50px 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pie .textSeccionTres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    border-left: 1px solid #2F2B26;
+    background-color: #ffffff;
+}
+
+.pie .textSeccionTres .titulo{
+    font-size: 46px;
+    font-weight: 300;
+    margin: 50px 30px 16px 50px;
+}
+
+.pie .textSeccionTres .iconos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+}
+
+.iconos i{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: normal;
+}
+
+.iconos i a{
+    display: flex;
+    padding-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2F2B26;
+}
+
+@media (max-width : 425px){
+    .navegador .navLinks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 24px 24px;
+        width: 100%;
+    }
+
+    .navegador .nombreComercio {
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .navegador .navLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .navegador .navLinks li {
+        display: flex;
+        margin-right: 24px;
+        margin-top: 18px;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .navegador .navLinks li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 200;
+    }
+
+    .navegador .navLinks li a i {
+        margin-left: 15px;
+        font-size: 22px;
+    }
+
+    .navLinks li input {
+        display: flex;
+        flex-direction: row;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #2F2B26;
+        padding: 4px;
+    }
+
+    .navLinks li i {
+        cursor: pointer;
+    }
+
+    .pie {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #2F2B26;
+    }
+
+    .pie .pieContacto {
+        width: 100%;
+        border-bottom: 1px solid #2F2B26;
+    }
+
+    .pie .textSeccionTres .iconos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        padding-bottom: 50px;
+    }
+    .infoUsuario .msj {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* margin: 20px; */
+        font-size: 20px;
+        font-weight: 400;
+        padding: 20px;
+        border-bottom: 1px solid #2F2B26;
+    }
+    .inputBox .label {
+        font-size: 16px;
+    }
+
+    .botonBox .label input {
+        padding: 10px ;
+    }
+}
