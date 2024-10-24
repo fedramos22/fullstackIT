@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #2F2B26;
+}
+
+.cabecera {
+    width: 100%;
+    border: 1px solid #2F2B26;
+}
+
+.navegador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 24px;
+    width: 100%;
+    align-items: center;
+}
+
+.navegador .nombreComercio {
+    margin-left: 16px;
+    justify-content: left;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.navegador .navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: flex-end;
+    margin: 0;
+}
+
+
+.navegador .navLinks li {
+    display: flex;
+    margin-right: 24px;
+    font-size: 16px;
+}
+
+.navegador .navLinks li #buscar {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+.navegador .navLinks li i {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.navLinks li input {
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #2F2B26;
+    padding: 4px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.navLinks li i {
+    cursor: pointer;
+}
+
+.main {
+    margin: 0;
+}
+
+.main .seccionUno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.seccionUno .tarjetaUno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    /*  background-image: url('../assets/images/tarjetaUno.png'); */
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #2F2B26;
+    border-right: 1px solid #2F2B26;
+}
+
+.tarjetaUno .textoUno {
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.tarjetaUno .textoDos {
+    text-align: center;
+    line-height: 62px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.tarjetaUno label input {
+    width: 140px;
+    height: 42px;
+    margin-top: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    color: #ffffff;
+    background-color: #2F2B26;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.tarjetaUno label input:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #2F2B26;
+}
+
+.seccionUno .tarjetaDos {
+    height: 100vh;
+    width: 50%;
+    /* background-image: url('../assets/images/tarjetaDos.png'); */
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #2F2B26;
+}
+
+.tarjetaDos img {
+    width: 100%;
+    height: 100%;
+}
+
+.seccionDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2F2B26;
+}
+
+.textSeccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 30px 50px 30px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.cardArticulos {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    overflow: hidden;
+    border: 1px solid #2F2B26;
+    border-top: none;
+}
+
+.cardArticulos figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cardArticulos figure i {
+    display: flex;
+    position: absolute;
+    padding: 8px;
+    margin: 8px;
+    font-size: 20px;
+    border-radius: 90px;
+    color: #ffffff;
+    background-color: #2F2B26;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cardArticulos figure i:hover {
+    background-color: #63605B;
+    color: #ffffff;
+}
+
+.cardArticulos figure img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.6s;
+}
+
+.cardArticulos img:hover {
+    transform: scale(1.2);
+}
+
+.cardArticulos .descArticulo {
+    display: flex;
+    margin: 20px 0 0 20px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.cardArticulos .precioArticulo {
+    margin: 0 0 20px 20px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cajaBoton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 28px 30px 50px 30px;
+    border: none;
+}
+
+.cajaBoton .boton {
+    padding: 14px 24px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #2F2B26;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.boton:hover {
+    background-color: #63605B;
+    color: #ffffff;
+}
+
+.main .categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.categoria div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding: 160px;
+
+}
+
+.categoria h2 {
+        font-size: 48px;
+        font-weight: 200;
+
+}
+
+.categoria .catUno {
+    width: 100%;
+    height: 25%;
+    /* background-image: url('../assets/images/categoriaTres.png'); */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #ffffff;
+    border-bottom: 1px solid #2F2B26;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.categoria .catUno:hover {
+    transform: scale(0.94);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
+    border: none;
+}
+
+.categoria .catDos {
+    width: 100%;
+    height: 25%;
+    /* background-image: url('../assets/images/categoriaDos.png'); */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-size: 50px;
+    color: #ffffff;
+    border-bottom: 1px solid #2F2B26;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.categoria .catDos:hover {
+    transform: scale(0.94);
+   /*  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/categoriaDos.png"); */
+    border: none;
+}
+
+.categoria .catTres {
+    width: 100%;
+    height: 25%;
+    /* background-image: url('../assets/images/categoriaUno.png');
+    background-size: cover; */
+    background-position: center;
+    overflow: hidden;
+    font-size: 50px;
+    color: #ffffff;
+    border-bottom: 1px solid #2F2B26;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.categoria .catTres:hover {
+    transform: scale(0.94);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/categoriaUno.png');; */
+    border: none
+}
+
+.categoria .catCuatro {
+    width: 100%;
+    height: 25%;
+    /* background-image: url('../assets/images/categoriaCuatro.png'); */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-size: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.categoria .catCuatro:hover {
+    transform: scale(0.94);
+   /*  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/categoriaCuatro.png"); */
+    border: none
+}
+
+.textSeccionDos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 30px;
+    border-top: 1px solid #2F2B26;
+    border-bottom: 1px solid #2F2B26;
+    background-color: #ffffff;
+}
+
+.textSeccionDos figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+}
+
+.textSeccionDos figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.textSeccionDos h1, .textSeccionTres h1 {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: end;
+    margin-left: 20px;
+}
+
+.main .seccionTres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    border-bottom: none;
+}
+
+.seccionTres .tarjetaTres {
+    height: 100vh;
+    width: 50%;
+    /* background-image: url('../assets/images/tarjetaTres.png'); */
+    background-size: cover;
+    background-position: center;
+    border-right: 1px solid #2F2B26;
+    border-bottom: none;
+}
+
+.seccionTres .tarjetaCuatro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.tarjetaCuatro .textoCuatro {
+    padding: 32px;
+    margin: 0 10px;
+    font-size: 26px;
+    font-weight: 200;
+}
+
+.tarjetaCuatro h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 32px;
+    margin: 0 20px;
+    font-weight: 300;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #2F2B26;
+}
+
+.pie .pieContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.pieContacto h2 {
+    font-size: 46px;
+    font-weight: 300;
+    margin: 50px 30px 16px 50px;
+}
+
+.pieContacto p {
+    margin: 0 30px 0 50px;
+    font-size: 16px;
+    font-weight: 300;
+    padding-right: 20px;
+}
+
+.pieContacto span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 50px 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pie .textSeccionTres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    border-left: 1px solid #2F2B26;
+    background-color: #ffffff;
+}
+
+.pie .textSeccionTres .titulo{
+    font-size: 46px;
+    font-weight: 300;
+    margin: 50px 30px 16px 50px;
+}
+
+.pie .textSeccionTres .iconos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+}
+
+.iconos i{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: normal;
+}
+
+.iconos i a{
+    display: flex;
+    padding-left: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2F2B26;
+}
+
+@media (max-width : 425px){
+    .navegador .navLinks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 24px 24px;
+        width: 100%;
+    }
+
+    .navegador .nombreComercio {
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .navegador .navLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .navegador .navLinks li {
+        display: flex;
+        margin-right: 24px;
+        margin-top: 18px;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .navegador .navLinks li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 200;
+    }
+
+    .navegador .navLinks li a i {
+        margin-left: 15px;
+        font-size: 22px;
+    }
+
+    .navLinks li input {
+        display: flex;
+        flex-direction: row;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #2F2B26;
+        padding: 4px;
+    }
+
+    .navLinks li i {
+        cursor: pointer;
+    }
+
+    .main .seccionUno {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .seccionUno .tarjetaUno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        /* background-image: url('../assets/images/tarjetaUno.png'); */
+        background-size: cover;
+        background-position: center;
+        border-bottom: 1px solid #2F2B26;
+        border-right: 1px solid #2F2B26;
+    }
+
+    .seccionUno .tarjetaDos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: 50vh;
+        width: 100%;
+        /* background-image: url('../assets/images/tarjetaDos.png'); */
+        background-size: cover;
+        background-position: center;
+        border-bottom: 1px solid #2F2B26;
+    }
+
+    .textSeccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .cardArticulos {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        overflow: hidden;
+        border: 1px solid #2F2B26;
+        border-top: none;
+    }
+
+    .cardArticulos .descArticulo {
+        font-size: 20px;
+    }
+
+
+    .categoria .catUno {
+        display: flex;
+        width: 100%;
+        height: 1vh;
+       /*  background-image: url(../assets/images/categoriaTres.png); */
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        color: #ffffff;
+        border-bottom: 1px solid #2F2B26;
+        cursor: pointer;
+        transition: all 0.5s;
+        align-content: center;
+    }
+    .categoria .catDos {
+        display: flex;
+        width: 100%;
+        height: 1vh;
+        /* background-image: url(../assets/images/categoriaDos.png); */
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        color: #ffffff;
+        border-bottom: 1px solid #2F2B26;
+        cursor: pointer;
+        transition: all 0.5s;
+        align-content: center;
+    }
+    .categoria .catTres {
+        display: flex;
+        width: 100%;
+        height: 1vh;
+        /* background-image: url(../assets/images/categoriaUno.png); */
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        color: #ffffff;
+        border-bottom: 1px solid #2F2B26;
+        cursor: pointer;
+        transition: all 0.5s;
+        align-content: center;
+    }
+    .categoria .catCuatro {
+        display: flex;
+        width: 100%;
+        height: 1vh;
+        /* background-image: url(../assets/images/categoriaCuatro.png); */
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        color: #ffffff;
+        border-bottom: 1px solid #2F2B26;
+        cursor: pointer;
+        transition: all 0.5s;
+        align-content: center;
+    }
+
+    .textSeccionDos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        border-bottom: 1px solid #2F2B26;
+        background-color: #ffffff;
+    }
+
+    .textSeccionDos h1{
+        font-size: 40px;
+        font-weight: 300;
+        text-align: end;
+        margin-left: 20px;
+    }
+
+    .main .seccionTres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        height: 100vh;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .seccionTres .tarjetaTres {
+        height: 100vh;
+        width: 100%;
+        /* background-image: url(../assets/images/tarjetaTres.png); */
+        background-size: cover;
+        background-position: center;
+        border-right: 1px solid #2F2B26;
+        border-bottom: none;
+    }
+
+    .seccionTres .tarjetaCuatro {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .tarjetaCuatro h2 {
+        text-align: left;
+        font-size: 30px;
+        margin: 20px 10px;
+        padding-left: 20px;
+        font-weight: 300;
+    }
+
+    .tarjetaCuatro .textoCuatro {
+        padding: 20px;
+        margin: 0 10px;
+        font-size: 22px;
+        font-weight: 200;
+    }
+
+    .pie {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #2F2B26;
+    }
+
+    .pie .pieContacto {
+        width: 100%;
+        border-bottom: 1px solid #2F2B26;
+    }
+
+    .pie .textSeccionTres .iconos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        padding-bottom: 50px;
+    }
+}
+
